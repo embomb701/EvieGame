@@ -50,4 +50,10 @@ h1{
 	position:absolute;
 	top:50px;
 	left:50px;
+	transition-timing-function: ease-in;
+	transition: 0.75s;
+}
+
+#cow.rightPosition {
+	transform: translateX(1100px) rotate(360deg);
 }

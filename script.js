@@ -6,6 +6,31 @@ const audio3 = new Audio('sound/Yeet.mp3');
 const audio4 = new Audio('sound/oof.mp3');
 var num = Math.floor(Math.random() * 1);
 
+
+// This is my solution but I can't explain how this works with no delay? LOL
+// There's a better way to do this though, using css, see "toggleCowPosition"
+const moveCow = async () => {
+    const delayTimer = milliseconds => new Promise(response => setTimeout(response, milliseconds));
+
+    for (let x = 0; x < 1180; x+= 5) {
+        document.getElementById('cow').style.left = x + 'px';
+        console.log(x);
+        await delayTimer(0);
+    }
+
+    console.log('Done');
+};
+
+// Adding a class name and using CSS to animate is
+// good for simple animations like what you're doing.
+// More complex animation would probably benefit from
+// using javascript though.
+const toggleCowPosition = () => {
+    const cow = document.getElementById('cow');
+
+    cow.classList.toggle("rightPosition");
+}
+
 const playYeet = () => {
     console.log(num);
     switch (num) {
@@ -18,10 +43,16 @@ const playYeet = () => {
     }
 
     document.getElementById('btn1').innerHTML = "You Got Yeeted!";
-    for (let x = 0; x < 1180; x += .7) {   
-        setTimeout(function () { document.getElementById('cow').style.left = x + 'px' }, 900);
-        console.log(x);
-    };
+
+    // Cow animation using CSS.
+    toggleCowPosition();
+
+    // Cow animation using JS.
+    // moveCow();
+    // for (let x = 0; x < 1180; x += .7) {
+    //     setTimeout(function () { document.getElementById('cow').style.left = x + 'px' }, 900);
+    //     console.log(x);
+    // };
 }
 
 const playFart = () => {
