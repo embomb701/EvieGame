@@ -25,11 +25,10 @@ const moveCow = async () => {
 // good for simple animations like what you're doing.
 // More complex animation would probably benefit from
 // using javascript though.
-const toggleCowPosition = () => {
+/*const toggleCowPosition = () => {
     const cow = document.getElementById('cow');
-
     cow.classList.toggle("rightPosition");
-}
+}*/
 
 const playYeet = () => {
     console.log(num);
@@ -45,7 +44,10 @@ const playYeet = () => {
     document.getElementById('btn1').innerHTML = "You Got Yeeted!";
 
     // Cow animation using CSS.
-    toggleCowPosition();
+    setTimeout(function toggleCowPosition() {
+        const cow = document.getElementById('cow');
+        cow.classList.toggle("rightPosition");
+    }, 500);
 
     // Cow animation using JS.
     // moveCow();
