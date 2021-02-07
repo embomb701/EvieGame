@@ -49,8 +49,9 @@ const playYeet = () => {
 
     // Cow animation using JS.
     // moveCow();
-    // for (let x = 0; x < 1180; x += .7) {
-    //     setTimeout(function () { document.getElementById('cow').style.left = x + 'px' }, 900);
+    // for (let x = 0; x < 1180; x += .09) {
+    //     setTimeout(function () { document.getElementById('cow').style.left = x + 'px' }, 100);
+
     //     console.log(x);
     // };
 }
