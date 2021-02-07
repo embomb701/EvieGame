@@ -61,11 +61,21 @@ const playYeet = () => {
 const playFart = () => {
     audio2.play();
     document.getElementById('btn2').innerHTML = "You Got Stinky Farted!";
+    document.getElementById('fart').classList.remove('hidden');
+    setTimeout(function delay() { document.getElementById('fart').classList.add('hidden'); }, 3000 )
+
 };
 
 const playOof = () => {
     audio4.play();
     document.getElementById('btn3').innerHTML = "You Got OOFed!";
+    setTimeout(function toggleCowPosition() {
+        document.getElementById('oof').classList.add('rotate');
+    }, 500);
+
+    setTimeout(function toggleCowPosition() {
+        document.getElementById('oof').classList.remove('rotate');
+    }, 3000);   
 };
 
 const reset = () => {

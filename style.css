@@ -57,3 +57,22 @@ h1{
 #cow.rightPosition {
 	transform: translateX(1100px) rotate(360deg);
 }
+
+#fart{
+	position:absolute;
+	left:390px;
+	top:100px;
+}
+
+.hidden{
+	visibility:hidden;
+}
+
+#oof{
+	position:absolute;
+	left:650px;
+}
+
+.rotate{
+	transform:rotate(90deg);
+}
