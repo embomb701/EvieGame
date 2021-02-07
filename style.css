@@ -1,0 +1,53 @@
+﻿body{
+	background-color: #99FF33;
+}
+h1{
+	text-align:center;
+	font-family:'Comic Sans MS';
+	color:white;
+	font-weight:700;
+	font-size:xx-large;
+	border: solid black;
+}
+
+.button {
+	display: inline-block;
+	padding: 0.3em 1.2em;
+	margin: 0 0.3em 0.3em 0;
+	width: 250px;
+	height: 120px;
+	border-radius: 2em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 800;
+	outline-color: black;
+	font-size: x-large;
+	color: #FFFFFF;
+	background-color: #4eb5f1;
+	text-align: center;
+	transition: all 0.2s;
+	position: relative;
+	left: 70px;
+	top: 200px;
+}
+
+.button:hover {
+	background-color: #4095c6;
+}
+
+@media all and (max-width:30em) {
+	 a.button {
+		display: block;
+		margin: 0.2em auto;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+	}
+}
+
+#cow{
+	position:absolute;
+	top:50px;
+	left:50px;
+}
